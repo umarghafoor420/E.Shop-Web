@@ -5,3 +5,6 @@ import heroimage from './heroimage'
 export const schema: { types: SchemaTypeDefinition[] } = {
   types: [product,category,heroimage],
 }
+
+
+export default  schema;
