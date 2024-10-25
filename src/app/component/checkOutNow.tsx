@@ -1,8 +1,8 @@
 "use client"
 import { Button } from "@/components/ui/button";
-import { urlFor } from "@/sanity/lib/image";
 import { useShoppingCart } from "use-shopping-cart";
 import { productCart } from "./AddTocart";
+import { urlFor } from "@/sanity/lib/image";
 
 export default function  CheckOut({currency,image,description,name,price,price_id}:productCart){
     const {checkoutSingleItem} = useShoppingCart();
@@ -14,7 +14,7 @@ export default function  CheckOut({currency,image,description,name,price,price_i
         description: description,
         price: price,
         currency: currency,
-        image: urlFor(image).url(),
+        image:urlFor(image).url(),
         price_id: price_id,
 
     }
