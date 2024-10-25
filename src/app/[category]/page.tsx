@@ -19,7 +19,7 @@ async function getData(category:string){
           return data;
 
 }
-export const dynamic="force-dynamic"
+export const dynamic = 'force-dynamic'
 
 export default  async function Categorypage({
   params,
